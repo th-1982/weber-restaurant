@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('django-insecure-(_c%9i=zel9sa3&$!4u9a-lf%q+sjgzh9ec
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['weber-restaurant.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-th1982-weberrestaurant-chauhj8ruql.ws-eu106.gitpod.io', 'weber-restaurant-496816a4ee09.herokuapp.com', 'weber-restaurant.herokuapp.com', 'localhost']
 
 
 # Application definition
