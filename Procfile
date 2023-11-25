@@ -1,1 +1,1 @@
-web: gunicorn weber_restaurant.wsgi
+web: gunicorn weber_reservations.wsgi
