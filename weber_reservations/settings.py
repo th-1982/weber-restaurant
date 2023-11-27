@@ -33,12 +33,12 @@ SECRET_KEY = os.environ.get('django-insecure-(_c%9i=zel9sa3&$!4u9a-lf%q+sjgzh9ec
 DEBUG = True
 
 AUTHENTICATION_BACKENDS = [
-    ...
+   
     
     'django.contrib.auth.backends.ModelBackend',
 
     'allauth.account.auth_backends.AuthenticationBackend',
-    ...
+  
 ]
 
 
