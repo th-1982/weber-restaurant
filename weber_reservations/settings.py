@@ -108,19 +108,19 @@ WSGI_APPLICATION = 'weber_reservations.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-# }
-
-
 DATABASES = {
-   'default': dj_database_url.config(
-    default=os.environ.get("DATABASE_URL", "postgres://qnqeutor:YfdV11PlXRvQXPpxMwN9_aSk0D7rfblW@lucky.db.elephantsql.com/qnqeutor")
-    )
-}
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+ }
+
+
+# DATABASES = {
+#   'default': dj_database_url.config(
+#    default=os.environ.get("DATABASE_URL", "postgres://qnqeutor:YfdV11PlXRvQXPpxMwN9_aSk0D7rfblW@lucky.db.elephantsql.com/qnqeutor")
+#    )
+#}
 
 
 
