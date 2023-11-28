@@ -60,8 +60,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise',
     'reservations',
-    
-    
+        
 ]
 
 SITE_ID = 1
