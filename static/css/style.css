@@ -344,6 +344,26 @@ h5 {
     font-size: 20px;
 }
 
+
+@keyframes arrows {
+    10%{
+        opacity: .8;
+    }
+    30%{
+        opacity: .6;
+    }
+    50%{
+        opacity: .4;
+    }
+    80%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
   
 
 
