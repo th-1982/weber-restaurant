@@ -52,3 +52,61 @@ h3 {
 .nav-link:hover {
     text-decoration: underline;
 }
+
+/* about us section */
+#about-us {
+    background-color: #CCC9A1;
+}
+
+/* #about-us {
+    background: url("../images/about-bg1.png") center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+} */
+
+.fa-solid {
+    color: #5D4E33;
+    font-size: 35px;
+}
+
+#about-text {
+   margin-bottom: 5px;
+   font-size: larger;
+
+}
+
+.about-p {
+    font-size: 20px;
+}
+
+.about-heading {
+    text-decoration: underline;
+}
+
+
+/* Special dishes section */
+
+.special-dishes {
+    background: url("../images/about-bg1.png") center;
+    background-size: cover;
+    padding: 48px; 
+    color: #c8d6b9;
+    text-align: center;   
+}
+
+
+.card-text {
+    font-size: large;
+}
+
+.card-img-top {
+    transition: all 1s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+
