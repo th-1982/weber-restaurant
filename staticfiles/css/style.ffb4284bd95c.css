@@ -60,7 +60,6 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-
 .hero-text{
 /*   
      width: 50px;
@@ -146,7 +145,7 @@ a{
 }
 
 /* #about-us {
-    background: url("../images/about-bg1.png") center;
+    background: url("../images/about-bg1.c8f96fdffe36.png") center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -176,7 +175,7 @@ a{
 /* Special dishes section */
 
 .special-dishes {
-    background: url("../images/about-bg1.png") center;
+    background: url("../images/about-bg1.c8f96fdffe36.png") center;
     background-size: cover;
     padding: 48px; 
     color: #c8d6b9;
@@ -202,7 +201,7 @@ a{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    /*background: url("../images/about-bg1.png") center;
+    /*background: url("../images/about-bg1.c8f96fdffe36.png") center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;*/
@@ -286,7 +285,7 @@ a{
 /* Menu item section */
 
 .wrapper {
-    background: url("../images/about-bg1.png");
+    background: url("../images/about-bg1.c8f96fdffe36.png");
     background-attachment: fixed;
     color: white;
     background-repeat: no-repeat;
