@@ -27,3 +27,28 @@ h3 {
     font-weight: 500;
     font-size: 30px;
 }
+
+/* Navigation links */
+
+.navbar {
+    background-color: #5D4E33;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.nav-link {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 2s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
