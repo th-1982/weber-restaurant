@@ -195,6 +195,58 @@ h3 {
 .text-font {
     font-size: 17px;
 }
+
+/* Menu item section */
+
+.wrapper {
+    background: url("../images/about-bg1.png");
+    background-attachment: fixed;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.menu-icon {
+    color: #fff;
+}
+
+.menu .text p {
+    font-size: 20px;
+}
+
+.menu .text i {
+    font-size: 17px;
+    font-style: italic;
+
+}
+
+.menu {
+    align-items: center;
+    justify-content: center;
+}
+
+.img-holder {
+    display: inline-block;
+}
+
+#menu-item {
+    color: #fff;
+    
+
+    
+}
+
+.card-body>img{
+    height:100px;
+    width:100px;
+}
+
   
 
 
