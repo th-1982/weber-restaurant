@@ -364,6 +364,39 @@ h5 {
 
 }
 
+
+
+/* Media Queires */
+
+@media (max-width:520px) {
+    .hero-text{
+       padding: 1rem .5rem ;
+       
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media (max-width:780px) {
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-holder img{
+        height: 100px;
+        width: 120px;
+    }
+}
+
+
+
+
   
 
 
