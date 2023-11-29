@@ -247,6 +247,41 @@ h2 {
     width:100px;
 }
 
+
+/* Sign in section */
+
+#signin {
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #3a3a3a;
+}
+
+#signin-p {
+    font-size: 18px;
+}
+label {
+    font-size: 20px;
+    display: inline-block;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.btn {
+    background-color: #5D4E33;
+    border-color: #fff;
+    transition: all 0.8s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: rgb(93, 78, 51);
+}
+
+
   
 
 
