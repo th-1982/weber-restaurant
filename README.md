@@ -94,7 +94,6 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |                                       |6B| As a developer, I need to implement a 500 error page to alert users when an internal server error occurs|
 |                                       |6C| As a developer, I need to implement a 403 error page to redirect unauthorized users so that I can secure my views|
 |                                       |6D| As a restaurant owner, I would like a home page so that customers can view information on my restaurant|
-
 |**DEPLOYMENT**                         |  ||
 |                                       |7A| As a developer, I need to remove comments and turn off DEBUG so that my project is ready for final deployment|
 |                                       |7B| As a developer, I need to deploy the project to Heroku so that it is live for customers|
