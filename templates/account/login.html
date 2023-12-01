@@ -1,34 +1,29 @@
-{% extends "account/base_entrance.html" %}
+
+{% extends "base.html" %} 
+{% load static %}
 {% load i18n %}
-{% load allauth account socialaccount %}
-{% block head_title %}
-    {% trans "Sign In" %}
-{% endblock head_title %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
 {% block content %}
-    {% element h1 %}
-        {% trans "Sign In" %}
-    {% endelement %}
-    <p>
-        {% blocktrans %}If you have not created an account yet, then please
-    <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
-    </p>
-    {% url 'account_login' as login_url %}
-    {% element form form=form method="post" action=login_url tags="entrance,login" %}
-        {% slot body %}
-            {% csrf_token %}
-            {% element fields form=form unlabeled=True %}
-            {% endelement %}
-            {% if redirect_field_value %}
-                <input type="hidden"
-                       name="{{ redirect_field_name }}"
-                       value="{{ redirect_field_value }}" />
-            {% endif %}
-        {% endslot %}
-        {% slot actions %}
-            {% element button type="submit" tags="prominent,login" %}
-                {% trans "Sign In" %}
-            {% endelement %}
-        {% endslot %}
-    {% endelement %}
-    {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
-{% endblock content %}
+
+<div class="wrapper">
+    <div class="container w-50 card card-body mt-5" style="background-color: #CCC9A1; margin-bottom: 40px;" id="signin">
+        <h2 class="text-center">Sign In <i class="fa-solid fa-right-to-bracket"></i></h2>
+        <p class="text-center py-3" id="signin-p">Welcome to Weber Restaurant.<br> Dear Customer, to make a booking or add meals to your favorite, please login.</p>
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+      <div class="form-input">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+      </div>
+      <p>{% blocktrans %}If you have not created an account yet, then please
+        <a class="authenticate-link" href="{{ account_signup }}"><b>SIGN UP</b></a> first.{% endblocktrans %}</p> <br>
+      <button class="btn btn-success mt-3 w-20" type="submit">{% trans "Sign In »" %} &raquo;</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

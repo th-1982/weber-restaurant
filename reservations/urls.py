@@ -1,10 +1,15 @@
 from django.urls import path
-from .views import homepage_view, menu_view, booking_view, contact_view
+# from .views import homepage_view, menu_view, booking_view, contact_view
+from .views import HomePageView, MenuView, BookingView, ContactView
+
+
 
 urlpatterns = [
     # path('', reservation_view, name='reservation_form')
-    path('', homepage_view, name='homepage'),
-    path('contact/', contact_view, name='contact'),
-    path('menu/', menu_view, name='menu'),
-    path('booking/', booking_view, name='booking')
+    path('', HomePageView.as_view(), name='homepage'),
+    path('contact/', ContactView.as_view(), name='contact'),
+    path('menu/', MenuView.as_view(), name='menu'),
+    path('booking/', BookingView.as_view(), name='booking'),
+
+
 ]
