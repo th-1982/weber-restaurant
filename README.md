@@ -20,34 +20,36 @@
 * [Table of Content](#table-of-content)
 * [Overview](#overview)
 * [User Experience - UX](#user-experience---ux)
-  * [Strategy](#strategy)
-  * [Scope](#scope)
-  * [Structure](#structure)
-  * [Skeleton](#skeleton)
-  * [Surface](#surface)
+  + [Strategy](#strategy)
+  + [Scope](#scope)
+  + [Structure](#structure)
+  + [Skeleton](#skeleton)
+  + [Surface](#surface)
     - [Color Scheme](#color-scheme)
     - [Fonts](#fonts)
     - [Visual Effects](#visual-effects)
 * [Agile Methodology](#agile-methodology)
 * [Features](#features)
-  * [Existing Features](#existing-features)
+  + [Existing Features](#existing-features)
     - [Create bookings](#create-bookings)
     - [Menu](#menu)
+    - [Client booking management](#client-bookings-management)
     - [Staff bookings management](#staff-bookings-management)
-  * [Future Feature Considerations](#future-feature-considerations)
+    - [Contact](#contact)
+  + [Future Feature Considerations](#future-feature-considerations)
 * [Responsive Layout and Design](#responsive-layout-and-design)
 * [Technologies Used](#technologies-used)
-  * [Languages](#languages)
-  * [Python packages](#python-packages)
-  * [Frameworks \& Tools](#frameworks--tools)
+  + [Languages](#languages)
+  + [Python packages](#python-packages)
+  + [Frameworks \& Tools](#frameworks--tools)
 * [Testing and Validation](#testing-and-validation)
 * [Deployment \& Development](#deployment--development)
-  * [Deploy on heroku](#deploy-on-heroku)
-  * [FORK THE REPOSITORY](#fork-the-repository)
-  * [CLONE THE REPOSITORY](#clone-the-repository)
+  + [Deploy on heroku](#deploy-on-heroku)
+  + [FORK THE REPOSITORY](#fork-the-repository)
+  + [CLONE THE REPOSITORY](#clone-the-repository)
 * [Credits](#credits)
-  * [Media](#media)
-  * [Code](#code)
+  + [Media](#media)
+  + [Code](#code)
 * [Acknowledgements](#acknowledgements)
 
 ## Overview
@@ -101,3 +103,15 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |                                       |8A| As a developer, I need to write automated tests and testing documentation so that others and myself can better understand my project|
 |                                       |8B| As a developer, I need to write a readme.md so that others and I can better understand my project|
 
+**Project Goal:**<br>
+This project aims to create a website for the Weber Restaurant that is useful and ensures efficient management for staff members and an engaging experience for clients.
+
+**Project Objectives:**<br>
+* To create a  website  with a simple and intuitive User Experience;
+* To make a responsive website that works on every device;
+* To add content that is relevant and helps create a better image of the restaurant;
+* To make clear categories of login accounts for staff members and clients;
+* To implement fully functional features that will ease the staff members' tasks and upgrade clients' experience with the restaurant services;
+* To present the restaurant's menu visually appealing and informatively, providing details about ingredients, prices, and any particular dishes;
+* To ensure the security and privacy of user data, especially regarding personal information and reservation details;
+* To maintain consistency with the brand identity of Weber Restaurant in terms of colors, fonts, and overall visual style.<br><br>
