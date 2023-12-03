@@ -115,3 +115,46 @@ This project aims to create a website for the Weber Restaurant that is useful an
 * To present the restaurant's menu visually appealing and informatively, providing details about ingredients, prices, and any particular dishes;
 * To ensure the security and privacy of user data, especially regarding personal information and reservation details;
 * To maintain consistency with the brand identity of Weber Restaurant in terms of colors, fonts, and overall visual style.<br><br>
+
+### Scope<hr>
+**Simple and Intuitive User Experience**<br>
+* Create a design that aligns with the restaurant's theme and branding;
+* Create a clear and well-organized header and footer design;
+* Ensure the navigation menu is prominently displayed and remains functional at every step of the user journey;
+* Ensure each page has a suggestive name that reflects its content;
+* Create visual feedback mechanisms to inform users as they navigate through different pages;
+* Organize content logically, making relevant information easily accessible to users;
+* Create prominent and clear call-to-action buttons, guiding users to essential functions like making reservations and viewing the menu.
+
+**Relevant Content**<br>
+* Add relevant information about the restaurant, such as the restaurant's name, precise location, contact phone number, and email address;
+* Create a clear and attractive presentation of the restaurant menu;
+* Create the culinary delights of Weber Restaurant through high-quality and appetizing photos.
+
+**Features for Upgraded Experience**<br>
+* Create an intuitive reservation system enabling users to view and select available tables for specific dates and times:
+* Create a Menu feature that provides information about each dish, including ingredients and pricing;
+* Create a Profile page where customers can track their upcoming reservations and manage their favorite meals;
+* Create a staff-member account system with specialized privileges for managing all bookings for all the users.
+
+**Clients and Staff Members Different Accounts**<br>
+* Allow access to a personalized profile page for client types of users where they can view and manage their reservations, favorite meals, and dining preferences;
+* Allow access to the Manage Bookings page, which enables staff members to handle reservations efficiently, update table availability, and provide excellent customer service;
+* Create a filter function within the staff-member dashboard to quickly locate and manage specific reservations;
+* Allow the client to add and edit meal reviews and overall dining experiences.
+
+**Responsiveness**<br>
+* Create a responsive website that adapts to various devices, including desktops, laptops, tablets, and smartphones. 
+
+### Structure<hr>
+The website is created and designed to focus on user experience and is divided into seven distinct pages, each crafted to fulfill a specific function. The content on these pages dynamically adapts depending on the user's authentication status and roles as either a client or staff member. Here are the details:
+* **Register/Login:** pages allow users to create accounts and authenticate for accessing personalized features. 
+* **Logout:** This page implements a modal for users to securely log out of their account and ensure a user-friendly experience when exiting the current session.
+* **Home page:** The page is accessible to both client and staff users and includes restaurant details, special dishes, and reviews. A call to action to encourage users to make a reservation like  Book a Table.  It also provides a welcoming overview of the restaurant for all visitors.
+* **Menu:** The page is open to all users and displays the restaurant's menu items. An "Add to Favourite" feature is available only to logged-in clients.
+* **Reservations/Profile:** Exclusive to authenticated users (clients and staff). This page enables authenticated users to make or manage bookings and provides a personalized space for users to handle their reservations and account details.
+* **Staff Manage Bookings:** Limited to staff members only and exclusively accessible to staff members. This page displays a comprehensive view of all registered bookings, offering tools for efficient management through grouping and filtering by date.
+
+
+
+
