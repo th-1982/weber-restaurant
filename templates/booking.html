@@ -9,34 +9,11 @@
     <div class="container w-50 card card-body mt-5" style="background-color: #CCC9A1; margin-bottom: 40px;" id="signin">
       <h2 class="text-center">Sign In <i class="fa-solid fa-pen-to-square"></i></h2>
       <p class="text-center py-3" id="signin-p">Welcome to Weber Restaurant.<br> Dear Customer, to make a booking or add meals to your favorite, please login.</p>
-      <form class="login" method="POST" action="/login.html">
-        <div class="form-input">
-          <label class="form-label" for="id_login">E-mail:</label>
-          <input type="email" name="login" class="form-control" placeholder="E-mail address" autocomplete="email" required="" id="id_login">
-        </div>
-        
-        <div class="form-input mt-2">
-          <label class="form-label" for="id_password">Password:</label>
-          <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="current-password" required="" id="id_password">
-        </div>
-    
-        <div class="form-check mt-3">
-          <label class="form-check-label" for="id_remember">
-            Remember Me:
-          </label>
-          <input class="form-check-label" type="checkbox" name="remember" value="" id="id_remember">
-        </div>
-        
-        <input type="hidden" name="next" value="/booking.html">
-    
-        <p>If you have not created an account yet, then please <a href="register.html"><b>SIGN UP</b></a> first.</p>
-    
-        <button class="btn btn-success mt-3 w-12" type="submit">Sign In »</button>
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>
+          <input type="submit" name="submit_input" value="Submit Input">
+        </p>
       </form>
-    </div>
-  </div>
-
-
-  {% endblock %}
-     
-  
+      

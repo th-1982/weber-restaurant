@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .forms import ReservationForm
 from django.views.generic import TemplateView, FormView
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -13,7 +14,7 @@ class ContactView(TemplateView):
 class MenuView(TemplateView):
     template_name = 'menu.html'
 
-class BookingView(FormView):
+class BookingView(FormView, LoginRequiredMixin):
     template_name = 'booking.html'
     form_class = ReservationForm
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
