@@ -11,6 +11,11 @@
 
 <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
+<form method="post" action="{% url 'booking' %}"> 
+  {% csrf_token %}
+  <button type="submit">Go back to booking</button>
+</form>
+
 <form method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
   {% if redirect_field_value %}

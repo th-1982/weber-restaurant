@@ -14,7 +14,7 @@ class ContactView(TemplateView):
 class MenuView(TemplateView):
     template_name = 'menu.html'
 
-class BookingView(FormView, LoginRequiredMixin):
+class BookingView(LoginRequiredMixin, FormView):
     template_name = 'booking.html'
     form_class = ReservationForm
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
