@@ -1,19 +1,9 @@
 from django.shortcuts import render
-# from .forms import ReservationForm
-from django.views.generic import TemplateView
+from .forms import ReservationForm
+from django.views.generic import TemplateView, FormView
+from django.urls import reverse_lazy
 
 # Create your views here.
-
-# View to display the reservation form
-# def reservation_view(request):
-#     if request.method == "POST":
-#         form = ReservationForm(request.POST)
-#         if form.is_valid(): # Check if the form is valid
-#             form.save()
-#     else:
-#         form = ReservationForm()
-#     return render(request, "index.html", {"form":form})
-
 class HomePageView(TemplateView):
     template_name = 'homepage.html'
 
@@ -23,5 +13,13 @@ class ContactView(TemplateView):
 class MenuView(TemplateView):
     template_name = 'menu.html'
 
-class BookingView(TemplateView):
+class BookingView(FormView):
     template_name = 'booking.html'
+    form_class = ReservationForm
+    fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
+    success_url = reverse_lazy('homepage')
+
+    def form_valid(self, form):
+        # Save the form
+        form.save()
+        return super().form_valid(form)
