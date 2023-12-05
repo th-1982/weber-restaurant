@@ -1,0 +1,69 @@
+
+{% extends "base.html" %} {% block content %}
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+    td .links {
+        color: blue;
+        background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Reservation Information</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Notes</th>
+        <th>Number of Guests</th>
+        <th>Table Number</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for reservation in reservations_list %}
+      <!-- Sample data, replace with actual data from your application -->
+      <tr>
+        <td>{{ reservation.name }}</td>
+        <td>{{ reservation.customer_email }}</td>
+        <td>{{ reservation.date }}</td>
+        <td>{{ reservation.time }}</td>
+        <td>{{ reservation.notes }}</td>
+        <td>{{ reservation.number_of_guests }}</td>
+        <td>{{ reservation.table }}</td>
+        <td class="links">
+            <a href="{% url 'reservation_edit' reservation.pk %}">+ Update Reservation</a>
+        </td class="links">
+        <td><a href="{% url 'reservation_delete' reservation.pk %}">+ Delete Reservation</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <form method="post" action="{% url 'booking' %}"> 
+    {% csrf_token %}
+    <button type="submit">Add Reservation</button>
+  </form>
+</body>
+{% endblock %
