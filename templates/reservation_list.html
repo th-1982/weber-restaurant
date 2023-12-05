@@ -18,7 +18,7 @@
     th {
       background-color: #f2f2f2;
     }
-    td .links {
+    td.links {
         color: blue;
         background-color: red;
     }
@@ -45,7 +45,7 @@
     </thead>
 
     <tbody>
-      {% for reservation in reservations_list %}
+      {% for reservation in reservations %}
       <!-- Sample data, replace with actual data from your application -->
       <tr>
         <td>{{ reservation.name }}</td>
@@ -55,12 +55,18 @@
         <td>{{ reservation.notes }}</td>
         <td>{{ reservation.number_of_guests }}</td>
         <td>{{ reservation.table }}</td>
-        <td class="links">
-            <a href="{% url 'reservation_edit' reservation.pk %}">+ Update Reservation</a>
+        <td>
+          <form method="get" action="{% url 'reservation_edit' reservation.pk %}"> 
+            {% csrf_token %}
+            <button type="submit">Update Reservation</button>
+          </form>
         </td>
-        <td class="links"><a href="{% url 'reservation_delete' reservation.pk %}">+ Delete Reservation</a></td>
-      </tr>
-        
+        <td><form method="get" action="{% url 'reservation_delete' reservation.pk %}"> 
+          {% csrf_token %}
+          <button type="submit">Delete Reservation</button>
+        </form>
+        </td>
+      </tr>   
       {% endfor %}
     </tbody>
   </table>
@@ -68,7 +74,5 @@
     {% csrf_token %}
     <button class="btn btn-success mt-3 w-20 text-center" type="submit">Create a Reservation</button>
   </form>
-    </div>
-</div>
 </body>
 {% endblock %}
