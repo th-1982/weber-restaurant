@@ -36,3 +36,9 @@ class Reservation_List_View(ListView):
     template_name = "reservation_list.html"
 
 
+class Reservation_Edit_View(UpdateView):
+    model = Reservations
+    template_name = "reservation_edit.html"
+    fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
+
+
