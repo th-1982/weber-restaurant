@@ -27,10 +27,10 @@ class BookingView(LoginRequiredMixin, FormView):
     def form_valid(self, form):
         # Save the form
         if form.is_valid():
-        form.save()
-
+            form.save()
+            
+        
         return super().form_valid(form)
-
 
 class Reservation_List_View(ListView):
     model = Reservations
@@ -41,6 +41,7 @@ class Reservation_Edit_View(UpdateView):
     model = Reservations
     template_name = "reservation_edit.html"
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
+    success_url = reverse_lazy("reservation_list")
 
 
 

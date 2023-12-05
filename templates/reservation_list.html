@@ -24,8 +24,10 @@
     }
   </style>
 </head>
-<body>
-  <h2>Reservation Information</h2>
+<body> 
+<div class="wrapper">
+    <div class="container w-50 card card-body mt-5" style="background-color: #CCC9A1; margin-bottom: 40px;" id="signin">
+  <h2 class="text-center">Reservation List</h2>
 
   <table>
     <thead>
@@ -55,15 +57,18 @@
         <td>{{ reservation.table }}</td>
         <td class="links">
             <a href="{% url 'reservation_edit' reservation.pk %}">+ Update Reservation</a>
-        </td class="links">
-        <td><a href="{% url 'reservation_delete' reservation.pk %}">+ Delete Reservation</a></td>
+        </td>
+        <td class="links"><a href="{% url 'reservation_delete' reservation.pk %}">+ Delete Reservation</a></td>
       </tr>
+        
       {% endfor %}
     </tbody>
   </table>
   <form method="post" action="{% url 'booking' %}"> 
     {% csrf_token %}
-    <button type="submit">Add Reservation</button>
+    <button class="btn btn-success mt-3 w-20 text-center" type="submit">Create a Reservation</button>
   </form>
+    </div>
+</div>
 </body>
-{% endblock %
+{% endblock %}

@@ -7,15 +7,18 @@
 
  <div class="wrapper">
     <div class="container w-50 card card-body mt-5" style="background-color: #CCC9A1; margin-bottom: 40px;" id="signin">
-      <h2 class="text-center">Booking <i class="fa-solid fa-pen-to-square"></i></h2>
+      <h2 class="text-center">Create Reservation: <i class="fa-solid fa-pen-to-square"></i></h2>
       <p class="text-center py-3" id="signin-p">Welcome to Weber Restaurant.<br> Dear Customer, to make a booking or add meals to your favorite, please login.</p>
       <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <p>
-          <input type="submit" name="submit_input" value="Submit Input">
+          <button class="btn btn-success mt-3 w-20 text-center" type="submit">Create</button>
         </p>
       </form>
+    </div>
+ </div>
 
-      {% endblock  %}
+
+  {% endblock  %}
       
