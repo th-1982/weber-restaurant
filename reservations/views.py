@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import ReservationForm
 from django.views.generic import TemplateView, FormView, ListView
+from django.views.generic.edit import UpdateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -41,4 +42,10 @@ class Reservation_Edit_View(UpdateView):
     template_name = "reservation_edit.html"
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
 
+
+
+class Reservation_Delete_View(DeleteView):
+    model = Reservations
+    template_name = "reservation_delete.html"
+    success_url = reverse_lazy("reservation_list")
 
