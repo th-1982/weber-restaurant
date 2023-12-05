@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from .forms import ReservationForm
-from django.views.generic import TemplateView, FormView
+from django.views.generic import TemplateView, FormView, ListView
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
+from .models import Reservations
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -18,9 +20,19 @@ class BookingView(LoginRequiredMixin, FormView):
     template_name = 'booking.html'
     form_class = ReservationForm
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
-    success_url = reverse_lazy('homepage')
+    success_url = reverse_lazy('reservation_list')
+    success_message = "Booking Successful"
 
     def form_valid(self, form):
         # Save the form
+        if form.is_valid():
         form.save()
+
         return super().form_valid(form)
+
+
+class Reservation_List_View(ListView):
+    model = Reservations
+    template_name = "reservation_list.html"
+
+
