@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'crispy_bootstrap5',
     'reservations',
         
 ]
