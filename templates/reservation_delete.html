@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="" method="post">{% csrf_token %}
+        <p>Are you sure you want to delete?</p>
+        <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Notes</th>
+                <th>Number of Guests</th>
+                <th>Table Number</th>
+                <th></th>
+              </tr>
+            </thead>
+        
+            <tbody>
+              <!-- Sample data, replace with actual data from your application -->
+              <tr>
+                <td>{{ reservations.name }}</td>
+                <td>{{ reservations.customer_email }}</td>
+                <td>{{ reservations.date }}</td>
+                <td>{{ reservations.time }}</td>
+                <td>{{ reservations.notes }}</td>
+                <td>{{ reservations.number_of_guests }}</td>
+                <td>{{ reservations.table }}</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        <input type="submit" value="Confirm">
+    </form>
+{% endblock  %}
