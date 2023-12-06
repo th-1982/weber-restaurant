@@ -24,6 +24,7 @@
         <a class="authenticate-link" href="{% url 'account_signup' %}"><b>SIGN UP</b></a> first.</p> <br>
       <button class="btn btn-success mt-3 w-20" type="submit">{% trans "Sign In " %} &raquo;</button>
     </form>
+    <p> If you forgot your password, click <a href="{% url "account_reset_password" %}" style="color: blue;">Reset Password</a></p>
   </div>
   </div>
 {% endblock %}
