@@ -56,17 +56,18 @@
         <td>{{ reservation.number_of_guests }}</td>
         <td>{{ reservation.table }}</td>
         <td>
-          <form method="get" action="{% url 'reservation_edit' reservation.pk %}"> 
-            {% csrf_token %}
-            <button type="submit">Update Reservation</button>
+          <form method="get" action="{% url 'reservation_edit' reservation.pk %}">
+           {% csrf_token %}
+          <button type="submit">Update Reservation</button>
           </form>
         </td>
-        <td><form method="get" action="{% url 'reservation_delete' reservation.pk %}"> 
-          {% csrf_token %}
+        <td>
+          <form method="get" action="{% url 'reservation_delete' reservation.pk %}">
+           {% csrf_token %}
           <button type="submit">Delete Reservation</button>
         </form>
         </td>
-      </tr>   
+      </tr>
       {% endfor %}
     </tbody>
   </table>

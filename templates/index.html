@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Reservation Form </title>
+    </head>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p>
+                <input type="submit" name="submit_reservation" value="Submit">
+        </form>
+    </body>
+</html>

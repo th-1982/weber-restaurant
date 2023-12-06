@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %} 
 {% load i18n %} 
+{% load crispy_forms_tags %}
 
 {% block head_title %}
 {% trans "Sign Up" %}{% endblock %}
@@ -21,7 +22,7 @@
       action="{% url 'account_signup' %}"
     >
       <div class="form-input mt-2">
-        {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+        {% csrf_token %} {{ form|crispy }} {% if redirect_field_value %}
         <input
           type="hidden"
           name="{{ redirect_field_name }}"
