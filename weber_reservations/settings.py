@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
+
 
 
 if os.path.isfile("env.py"):
@@ -72,6 +74,17 @@ LOGOUT_REDIRECT_URL = 'homepage'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+    messages.SUCCESS: 'success',
+    messages.WARNING: 'warning',
+    messages.INFO: 'info',
+    messages.DEBUG: 'debug',
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
