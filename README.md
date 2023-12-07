@@ -157,7 +157,12 @@ The website is created and designed to focus on user experience and is divided i
 * **Staff Manage Bookings:** Limited to staff members only and exclusively accessible to staff members. This page displays a comprehensive view of all registered bookings, offering tools for efficient management through grouping and filtering by date.
 
 #### Flowchart
-The Flowchart for my program was designed using <b>LucidChart</b>. It visualizes the system's work, providing an overview of the logic and steps involved in the program's workflow.
+The Flowchart for my program was designed using <b>LucidChart</b>. It visualizes the system's work, providing an overview of the logic and steps involved in the program's workflow.<br>
+![Flowchart](docs/readme_images/weber-restaurant-flowchart.jpg)<br><br>
+
+### Skeleton<hr>
+**Wireframes**<br>
+The wireframes for mobile and desktop were created with  [Balsamiq](https://balsamiq.com/) tool and can be viewed [here]
 
 
 
