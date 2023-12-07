@@ -1,4 +1,3 @@
-
 {% extends "base.html" %} {% block content %}
 <head>
   <style>
@@ -18,18 +17,14 @@
     th {
       background-color: #f2f2f2;
     }
-    td.links {
-        color: blue;
-        background-color: red;
-    }
+    
   </style>
 </head>
 <body> 
 <div class="wrapper">
-    <div class="container w-50 card card-body mt-5" style="background-color: #CCC9A1; margin-bottom: 40px;" id="signin">
+  <div class="container form-style w-50 card card-body mt-5 mb-5" style="background-color: #CCC9A1; margin-bottom: 40px;" id="signin">  
   <h2 class="text-center">Reservation List</h2>
-
-  <table>
+  <table class="table table-striped table-hover">
     <thead>
       <tr>
         <th>Name</th>
@@ -45,7 +40,7 @@
     </thead>
 
     <tbody>
-      {% for reservation in reservations %}
+      {% for reservation in reservations_list %}
       <!-- Sample data, replace with actual data from your application -->
       <tr>
         <td>{{ reservation.name }}</td>
@@ -56,16 +51,10 @@
         <td>{{ reservation.number_of_guests }}</td>
         <td>{{ reservation.table }}</td>
         <td>
-          <form method="get" action="{% url 'reservation_edit' reservation.pk %}">
-           {% csrf_token %}
-          <button type="submit">Update Reservation</button>
-          </form>
+            <a class="btn btn-success mt-3 w-20 text-center" href="{% url 'reservation_edit' reservation.pk %}" style="background-color: blue; padding: 0.6rem;">Update</a>
         </td>
         <td>
-          <form method="get" action="{% url 'reservation_delete' reservation.pk %}">
-           {% csrf_token %}
-          <button type="submit">Delete Reservation</button>
-        </form>
+          <a class="btn btn-success mt-3 w-20 text-center" href="{% url 'reservation_delete' reservation.pk %}" style="background-color: red; padding: 0.6rem;">Delete</a>
         </td>
       </tr>
       {% endfor %}
@@ -75,5 +64,7 @@
     {% csrf_token %}
     <button class="btn btn-success mt-3 w-20 text-center" type="submit">Create a Reservation</button>
   </form>
+    </div>
+</div>
 </body>
 {% endblock %}

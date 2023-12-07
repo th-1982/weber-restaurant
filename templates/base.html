@@ -104,6 +104,14 @@
   crossorigin="anonymous"
 ></script>
 <script src="{% static "js/script.js" %}"></script>
+<!----Script for notification message-->
+<script>
+  setTimeout(function () {
+    let messages = document.getElementById('msg');
+    let alert = new bootstrap.Alert(messages);
+    alert.close();
+}, 3000);
+</script>
 </body>
 </html>
 

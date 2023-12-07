@@ -120,6 +120,8 @@ h3 {
 
 a{
     color: white !important;
+    font-size: 17px;
+    
 }
 
 .arrow-1{
@@ -290,8 +292,8 @@ a{
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 h2 {
