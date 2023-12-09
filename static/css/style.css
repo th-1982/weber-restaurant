@@ -53,6 +53,7 @@ h3 {
     text-decoration: underline;
 }
 
+
 /* Home image and text-box */
 .hero{
     position: relative;
@@ -436,11 +437,6 @@ h5 {
 
 /* Sign Up section */
 
-#signup_form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 .form-input {
     margin-bottom: 20px;
 }
@@ -456,6 +452,14 @@ h5 {
     font-size: 16px;
 }
 
+
+#id_password1_helptext {
+    display: none;
+}
+
+.form-text a {
+    font-size: 18px;
+}
 
 
 

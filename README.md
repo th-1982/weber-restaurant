@@ -217,11 +217,14 @@ Some animations were used for creating a dynamic and attractive design
 <details>
 <summary>View Footer elements hover</summary>
 <img src="static/italianissimo/media/footer-capture.gif"><br>
-</details><br>
+</details>
+<br>
+<br>
 
 ## Agile methodolgy
 This project was developed using the Agile methodology.<br>
-All epics and user stories implementation progress was registered using [GitHub](https://github.com/). As the user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress**, **Done** and **Not Implemented** lists. 
+All epics and user stories implementation progress was registered using [GitHub](https://github.com/). As the user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress**, **Done** and **Not Implemented** lists.
+<details> 
 <summary>Sprint Details</summary>
 
 * **KANBAN BOARD**<br><br>
@@ -267,7 +270,7 @@ All epics and user stories implementation progress was registered using [GitHub]
     -6I Implement so that site user can see available tables<br>
     -6J Implement so that user receives a confirmation email after creating a reservation<br><br>
     <img src="docs/readme_images/epic-6.jpg" width="60%"><br><br>
-  * **EPIC 7 - STAND ALONE PAGES**<br>
+* **EPIC 7 - STAND ALONE PAGES**<br>
     -2A Implement 404 page<br>
     -2B Implement 505 page<br>
     -2C Implement 403 page<br>
@@ -282,4 +285,63 @@ All epics and user stories implementation progress was registered using [GitHub]
     -8B Write documentation for project in README.md<br><br>
     <img src="docs/readme_images/epic-9.jpg" width="60%"><br><br>
 </details><br><br>
+
+## Features
+
+### Existing Features and sub-pages<hr>
+
+#### Client bookings management
+
+Every client that is authenticated can access the *Reservation* page where they have an overview over their reservations.
+* From this view they can select to:
+    * Create a new reservation;<br>
+    * Edit an existing reservation;<br>
+    * Delete a reservation;<br>
+<br><br>
+
+<img src="docs/readme_images/clientlist.jpg" width="40%"><br><br>
+
+#### Staff bookings management
+
+Staff users that are authenticated can access the *Reservation* page where they have an overview of all the reservations made, as well as an additional feature of being able to search for reservations based on date or email-address.
+* From this view they can select to:
+    * Create a new reservation;<br>
+    * Edit an existing reservation;<br>
+    * Delete a reservation;<br>
+    * Search for specific reservations<br>
+<br><br>
+
+<img src="docs/readme_images/stafflist.jpg" width="40%"><br><br>
+
+#### Create bookings
+
+Every user that is authenticated can access the *Reservation* page for making a reservation. This feature provides a form where the user can fill in the reservation details.
+* The form is for selecting the date and time interval of the booking.
+    The inputs are validated after the following rules:
+    * The Date value should not be less than the current day;<br>
+    * Entering Name, date and number of people is required;<br>
+    * Maximum number of guests for a reservation is 8 people;<br>
+    * The user can choose times from a list;
+      * 1: 12:00 - 14:00
+      * 2: 14:00 - 16:00
+      * 3: 16:00 - 18:00
+      * 4: 18:00 - 20:00
+      * 5: 20:00 - 22:00<br><br>
+
+   
+<img src="docs/readme_images/create_reservation.jpg" width="40%"><br><br>
+
+* If the reservation is submitted successfully, a success message will appear 
+
+
+#### Menu 
+* On the *Menu* page there is a list with all the menu elements. Every item represents a meal with details such as *Name*, *Image*, *Price*, and Ingredients. The list design is simple and attractive.<br>
+<img src="docs/ireadme_images/menu1.jpg" width="70%"><br><br>
+
+
+The "Contact" page serves as a one-stop destination for all essential details about the Weber Restaurant. It features our opening hours, contact information, and physical location. 
+
+<img src="docs/readme_images/contact.jpg" width="30%"><br><br>
+
+
 
