@@ -71,7 +71,7 @@ This site was created respecting the Five Planes Of Website Design:<br>
 |**USER REGISTRATION/AUTENTHICATION**                     |  ||
 |                                       |2A| As a  user,  I want to create an account so that I can make reservations in my name|
 |                                       |2B| As a  user, I want to use my email and password to log in so that my account is secure|
-|                                       |2C| As a user, I want to log in from my account so that I can keep my account safe|
+|                                       |2C| As a user, I want to log out from my account so that I can keep my account safe|
 |                                       |2D| As a user, I want to reset my password by sending a link so that I can log in even if I forgot my password|
 |**CONTACT**                            |  ||
 |                                       |3A| As a user, I want to see the restaurant's opening and closing hours|
@@ -162,8 +162,124 @@ The Flowchart for my program was designed using <b>LucidChart</b>. It visualizes
 
 ### Skeleton<hr>
 **Wireframes**<br>
-The wireframes for mobile and desktop were created with  [Balsamiq](https://balsamiq.com/) tool and can be viewed [here]
+The wireframes for mobile and desktop were created with  [Balsamiq](https://balsamiq.com/wireframes/desktop/#) tool and can be viewed [here]
 
 
+**Database**<br>
+The project uses ElephantSQL as PostgreSQL relational database for storing the data.<br>
+Two diagrams were created to represent the relationships between the tables. The first diagram was created before the website was developed, and it was used to identify the most relevant and useful attributes and tables. The final diagram was created after the website was developed, and it reflects the changes that were made to the attributes and tables.
 
+<details>
+  <summary>Initial Model</summary>
+<img src="docs/readme_images/datamodel_plan.jpeg" ><br>
+</details>
+
+
+### Surface<hr>
+#### Color Scheme
+* The color scheme balances vibrant and energetic elements with neutral tones to maintain readability and a harmonious visual appeal. Using consistent colors throughout different sections creates a cohesive and branded user experience for the Weber Restaurant project. The remaining features on the website and font are a balance of dark grey or black and white to maintain contrast and readability. <br>
+
+<img src="docs/readme_images/colorscheme-weber1.jpg">
+<img src="docs/readme_images/coloscheme-weber2.jpg">
+
+#### Fonts
+* The fonts I used for this site were imported from [Google Fonts](https://fonts.google.com/):<br>
+* h1 - h6 elements: *Montserrat*
+* Body: *Lato*
+
+#### Logo
+* The website logo was made using [Canvas](https://www.canva.com/templates/?query=logo) to match website's color scheme
+
+#### Visual Effects
+* **Box shadows** <br>
+Multiple box shadows were used for the cover, buttons and images. They were inspired from [css-box-shadow-examples]("https://getcssscan.com/css-box-shadow-examples")<br>
+
+* **Animation**<br>
+Some animations were used for creating a dynamic and attractive design
+<details>
+  <summary>View Moving arrows animation</summary>
+<img src="docs/media/arrow-capture.gif.mp4"><br>
+</details>
+<details>
+  <summary>View pop-up images animation</summary>
+<img src="static/italianissimo/media/image-capture.gif"><br>
+</details>
+
+* **Hover effects**<br>
+<details>
+  <summary>View NavBar elements hover</summary>
+<img src="static/italianissimo/media/nav-capture.gif"><br>
+</details>
+<details>
+  <summary>View Buttons hover</summary>
+<img src="static/italianissimo/media/delete-capture.gif"><br>
+</details>
+<details>
+<summary>View Footer elements hover</summary>
+<img src="static/italianissimo/media/footer-capture.gif"><br>
+</details><br>
+
+## Agile methodolgy
+This project was developed using the Agile methodology.<br>
+All epics and user stories implementation progress was registered using [GitHub](https://github.com/). As the user stories were accomplished, they were moved in the GitHub Kanban board from **ToDo**, to **In Progress**, **Done** and **Not Implemented** lists. 
+<summary>Sprint Details</summary>
+
+* **KANBAN BOARD**<br><br>
+    <img src="docs/readme_images/kanban-weber-restaurant.jpg" width="70%"><br><br>
+* **EPIC 1 - BASE SETUP**<br>
+    - Create base.html<br>
+    - Create static resources<br>
+    - Create navigation menu<br>
+    - Design according to good UX practices<br>
+    - Setup Django project<br>
+    - Create a footer<br><br>
+    <img src="docs/readme_images/epic-1.jpg" width="60%"><br><br>
+* **EPIC 2 - CONTENT AND NAVIGATION**<br>
+    -2A create content and navigatio<br>
+    -2B view the Restaurant's relevant information<br>
+    -2C see the nice and intuition design about the restaurants<br><br>
+    <img src="docs/readme_images/epic-2.jpg" width="60%"><br><br>
+* **EPIC 3 - USER REGISTRATION/AUTENTHICATION**<br>
+    -3A Implement the *Register* page using the django-allauth module<br>
+    -3B Implement the *Login* page using django-allauth module<br>
+    -3C Implement *Logout* modal using django-allauth module<br>
+    -3D Implement a *Reset password* function<br><br>
+    <img src="docs/readme_images/epic-3.jpg" width="60%"><br><br>
+* **EPIC 4 - CONTACT**<br>
+    -4A Implement opening & closing times on the webpage<br>
+    -4B Implement information about location of the restaurant<br>
+    -4C Implement contact information<br>
+    -4D Implement other relevant information<br><br>
+    <img src="docs/readme_images/epic-4.jpg" width="60%"><br><br>
+* **EPIC 5 - MENU**<br>
+    -5A Create a menu page with menu items<br>
+    -5B Implement a function so that staff can enter new items on the menu<br><br>
+    <img src="docs/readme_images/epic-5.jpg" width="60%"><br><br>
+* **EPIC 6 - BOOKINGS**<br>
+    -6A Implement reservation view for site user<br>
+    -6B Implement reservation view for staff<br>
+    -6C Implement reservation filter function for staff<br>
+    -6D Implement function so site user can update a reservation<br>
+    -6E Implement function so staff can update reservation<br>
+    -6F Implement so user can delete a reservation<br>
+    -6G Implement so staff can delete reservations<br>
+    -6H Implement function so that user can create a reservation<br>
+    -6I Implement so that site user can see available tables<br>
+    -6J Implement so that user receives a confirmation email after creating a reservation<br><br>
+    <img src="docs/readme_images/epic-6.jpg" width="60%"><br><br>
+  * **EPIC 7 - STAND ALONE PAGES**<br>
+    -2A Implement 404 page<br>
+    -2B Implement 505 page<br>
+    -2C Implement 403 page<br>
+    -2D Create a restaurant page<br><br>
+    <img src="docs/readme_images/epic-7.jpg" width="60%"><br><br>
+* **EPIC 8 - DEPLOYMENT**<br>
+    -7A Prepare the project for deployment<br>
+    -7B Deploy the project to Heroku<br><br>
+    <img src="docs/readme_images/epic-8.jpg" width="60%"><br><br>
+* **EPIC 9 - DOCUMENTATION**<br>
+    -8A Create automated tests<br>
+    -8B Write documentation for project in README.md<br><br>
+    <img src="docs/readme_images/epic-9.jpg" width="60%"><br><br>
+</details><br><br>
 
