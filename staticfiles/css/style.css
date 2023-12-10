@@ -28,6 +28,11 @@ h3 {
     font-size: 30px;
 }
 
+p {
+    font-family: Lato, sans-serif;
+    font-size: 1.1rem;
+}
+
 /* Navigation links */
 
 .navbar {
@@ -52,6 +57,7 @@ h3 {
 .nav-link:hover {
     text-decoration: underline;
 }
+
 
 /* Home image and text-box */
 .hero{
@@ -436,11 +442,6 @@ h5 {
 
 /* Sign Up section */
 
-#signup_form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 .form-input {
     margin-bottom: 20px;
 }
@@ -457,7 +458,13 @@ h5 {
 }
 
 
+#id_password1_helptext {
+    display: none;
+}
 
+.form-text a {
+    font-size: 18px;
+}
 
 @keyframes arrows {
     10%{

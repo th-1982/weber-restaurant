@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .forms import ReservationForm
+from .forms import ReservationForm, SearchReservationForm
+import datetime
 from django.views.generic import TemplateView, FormView, ListView
 from django.views.generic.edit import UpdateView, DeleteView
 from django.urls import reverse_lazy
@@ -41,7 +42,18 @@ class Reservation_List_View(ListView):
     def get_queryset(self):
         if self.request.user.is_staff:
             queryset = super().get_queryset()
-            
+            booking_email = self.request.GET.get('booking_email')
+            booking_date = self.request.GET.get('booking_date')
+
+            if booking_email:  # If booking_email is not None
+                queryset = queryset.filter(customer_email=booking_email)
+
+            if booking_date:
+                queryset = queryset.filter(date=booking_date)
+
+            queryset = queryset.filter(
+                date__gte=datetime.date.today()-datetime.timedelta(days=1))
+
             # If user is staff, return all reservations from today onwards
             return queryset
 
@@ -49,7 +61,13 @@ class Reservation_List_View(ListView):
             # If user is not staff, return only reservations made by user
             return Reservations.objects.filter(user=self.request.user)
 
-
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['search_form'] = SearchReservationForm(
+            self .request.GET or None)
+        context['navbar'] = 'view'
+        return context
+        
 class Reservation_Edit_View(SuccessMessageMixin, UpdateView):
     model = Reservations
     template_name = "reservation_edit.html"
