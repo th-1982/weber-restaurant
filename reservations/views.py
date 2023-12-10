@@ -36,6 +36,18 @@ class BookingView(LoginRequiredMixin, SuccessMessageMixin, FormView):
 class Reservation_List_View(ListView):
     model = Reservations
     template_name = "reservation_list.html"
+    context_object_name = 'reservations'
+
+    def get_queryset(self):
+        if self.request.user.is_staff:
+            queryset = super().get_queryset()
+            
+            # If user is staff, return all reservations from today onwards
+            return queryset
+
+        else:
+            # If user is not staff, return only reservations made by user
+            return Reservations.objects.filter(user=self.request.user)
 
 
 class Reservation_Edit_View(SuccessMessageMixin, UpdateView):
