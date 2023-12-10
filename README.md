@@ -532,3 +532,60 @@ Staff users receive confirmation messages upon successfully creating, editing, o
   <br><br>
   <img src="docs/readme_images/delete_reservation.jpg" width="60%"><br><br>
 
+
+### Potential Future Features
+**Multilingual Support**: Provide Support for multiple languages to cater to a diverse customer base.
+
+**Personalized User Accounts**: Allow users to create accounts for a more customized experience, saving favorite menu items or past reservations.
+
+**User Reviews and Ratings**: Implement a review and rating system for menu items and overall dining experience.
+
+**Google Login**: Users can register or log in with their existing Google credentials, eliminating the need to create a new account and remember additional login details.
+
+**Email confirmation for Reservations**:  Implement an automated email confirmation system that sends a confirmation email to users when they make a reservation.
+
+
+## Responsive Layout and Design
+The project design has been adapted to all devices using Bootstrap predefined breakpoints. A custom breakpoint was used for intermediate devices where the layout didn't fit accordingly.
+
+## Tools used
+
+[GitHub](https://github.com/) - used for hosting the source code of the program<br>
+[Visual Studio](https://code.visualstudio.com/) - for writing and testing the code<br>
+[Heroku](https://dashboard.heroku.com/) - used for deploying the project<br>
+[ElephantSQL](https://www.elephantsql.com/) - For PostgreSQL database<br>
+[Balsamiq](https://balsamiq.com/wireframes/) - for creating the wireframes<br>
+[LucidChart](https://www.lucidchart.com/) - used for creating the Flowchart and Database relational schema<br>
+[Favicon.io](https://favicon.io/) - used for generating the website favicon<br>
+[TinyPNG](https://tinypng.com/) - for compressing the images<br>
+[Grammarly](https://app.grammarly.com/) - for correcting text content<br>
+[Font Awesome](https://fontawesome.com/) - for creating atractive UX with icons<br>
+[Bootstrap5](https://getbootstrap.com/) - for adding predifined styled elements and creating responsiveness<br>
+[Google Fonts](https://fonts.google.com/) - for typography<br>
+[Code Institute Pylint](https://pep8ci.herokuapp.com/) - used for validating the python code<br>
+[HTML - W3C HTML Validator](https://validator.w3.org/#validate_by_uri+with_options) - used for validating the HTML<br>
+[CSS - Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - used for validating the CSS<br>
+[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - for debugging the project<br>
+[W.A.V.E.](https://wave.webaim.org/) - for testing accessibility<br>
+[Cloudinary](https://cloudinary.com/) - for storing static data<br>
+Chrome LightHouse extension - for testing performance<br>
+[coolors.co](https://coolors.co/8aea92-80ada0-5f5566-33202a-000000) - for super color palettes generator<br>
+[Canva](https://www.canva.com/templates/?query=logo) - used to create the logo in header
+
+
+### Python Modules/Packages used:
+
+Several core packages were used; a few of the most important ones are listed here, together with their functions:
+
+* Django - A high-level Python web framework developed for this application/site.
+* psycopg2 - PostgreSQL database adapter for the Python programming language.
+* WhiteNoise - used for serving static files (CSS; Javascript, images, etc)
+- django-allauth - Integrated Django applications addressing authentication, registration, account management, and 3rd party (social) account authentication.
+- Django-crispy-forms - provides a `crispy` filter and `{% crispy %}` tag that allows control of the rendering behavior of Django forms in an exquisite and DRY way.
+- crispy-boostrap4 - Bootstrap4 template pack for django-crispy-forms.
+- coverage - allows the creation of a coverage report of automated testing.
+
+## Testing
+The testing documentation can be found at [TESTING.md](TESTING.md)
+
+## Deployment
