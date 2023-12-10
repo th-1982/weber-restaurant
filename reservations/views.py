@@ -17,7 +17,7 @@ class ContactView(TemplateView):
 class MenuView(TemplateView):
     template_name = 'menu.html'
 
-class BookingView(LoginRequiredMixin, FormView):
+class BookingView(LoginRequiredMixin, SuccessMessageMixin, FormView):
     template_name = 'booking.html'
     form_class = ReservationForm
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
@@ -29,6 +29,7 @@ class BookingView(LoginRequiredMixin, FormView):
         if form.is_valid():
             form.save()
             
+            
         
         return super().form_valid(form)
 
@@ -37,16 +38,20 @@ class Reservation_List_View(ListView):
     template_name = "reservation_list.html"
 
 
-class Reservation_Edit_View(UpdateView):
+class Reservation_Edit_View(SuccessMessageMixin, UpdateView):
     model = Reservations
     template_name = "reservation_edit.html"
     fields = ['user', 'customer_email','name', 'date', 'time', 'notes', 'number_of_guests', 'table']
     success_url = reverse_lazy("reservation_list")
+    success_message = "Reservation Updated Successful"
 
 
-
-class Reservation_Delete_View(DeleteView):
+class Reservation_Delete_View(SuccessMessageMixin, DeleteView):
     model = Reservations
     template_name = "reservation_delete.html"
     success_url = reverse_lazy("reservation_list")
+    success_message = "Reservation Deleted Successful"
+
+
+    
 
