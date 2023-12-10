@@ -152,7 +152,7 @@ The website is created and designed to focus on user experience and is divided i
 * **Logout:** This page implements a modal for users to securely log out of their account and ensure a user-friendly experience when exiting the current session.
 * **Home page:** The page is accessible to both client and staff users and includes restaurant details, special dishes, and reviews. A call to action to encourage users to make a reservation like  Book a Table.  It also provides a welcoming overview of the restaurant for all visitors.
 * **Menu:** The page is open to all users and displays the restaurant's menu items. An "Add to Favourite" feature is available only to logged-in clients.
-* **Reservations/Profile:** Exclusive to authenticated users (clients and staff). This page enables authenticated users to make or manage bookings and provides a personalized space for users to handle their reservations and account details.
+* **Reservations:** Exclusive to authenticated users (clients and staff). This page enables authenticated users to make or manage bookings and provides a personalized space for users to handle their reservations and account details.
 * **Contact:** contains information visible to all users and provides details on the restaurant's location, opening & closing times, and contact information for easy access.
 * **Staff Manage Bookings:** Limited to staff members only and exclusively accessible to staff members. This page displays a comprehensive view of all registered bookings, offering tools for efficient management through grouping and filtering by date.
 
@@ -288,60 +288,247 @@ All epics and user stories implementation progress was registered using [GitHub]
 
 ## Features
 
-### Existing Features and sub-pages<hr>
+### Existing Features<hr>
+
+#### Navigation Menu
+
+* Navigation Menu on Weber Restaurant Website:
+The navigation menu on the Weber Restaurant website is a critical component that facilitates seamless navigation and enhances the overall user experience. Here are key features and characteristics:
+* Logo and Restaurant Name:
+  * The menu prominently features the restaurant's logo and name, providing users with instant brand recognition and reinforcing the identity of Weber Restaurant.<br>
+* Navbar:
+  * The navigation menu includes a navbar with links to various sections and pages of the website.<br>
+  * The navbar is designed for user-friendly navigation, allowing visitors to access different parts of the website easily.<br>
+* Consistency Across Pages:
+  * The navigation menu maintains consistency across all pages of the website.<br>
+  * This consistency ensures that users can quickly locate and access navigation options, irrespective of the specific page they view.<br>
+* Visibility for All Users:
+  * The navbar, logo, and restaurant name are visible to unauthenticated and authenticated users.<br>
+  * This design choice ensures a uniform and familiar interface for all visitors, contributing to a positive and cohesive user experience.<br>
+* Responsive Design:
+  * The navigation menu is designed to be responsive, adapting to different screen sizes.<br>
+  * On smaller devices, the menu may collapse into a hamburger menu, optimizing space and ensuring usability on mobile devices.<br>
+<br><br>
+
+<img src="docs/readme_images/navbar.jpg" width="60%"><br><br>
+
+#### Footer
+
+* Social Media Links:
+  * The footer includes links to the restaurant's social media profiles on Twitter, Instagram, YouTube, and Facebook.<br>
+  * These links allow users to stay updated on special offers and promotions not featured on the website.<br>
+* Accessibility Considerations:
+  * Aria labels have been added to the social media icons to enhance accessibility for users relying on-screen reading technology.<br>
+  * This ensures that users with disabilities can understand the purpose of each link.<br>
+* New Tab Opening:
+  * The social media links are configured to open in new tabs. This helps users maintain their current browsing session on the restaurant's website.<br>
+* Consistent Footer Design:
+  * The footer maintains a consistent design across various screen sizes, ensuring a cohesive and visually pleasing experience for users.<br>
+* Copyright Feature:
+  * Includes a copyright statement, providing legal information about the ownership of content on the website.<br>
+* Scroll-to-Top Functionality:
+  * The footer incorporates a scroll-to-top link, represented by an arrow icon.<br>
+  * When clicked, this link smoothly scrolls users back to the top of the page, enhancing overall user experience and navigation.<br>
+<br><br>
+
+<img src="docs/readme_images/footer.jpg" width="60%"><br><br>
+
+#### Home page
+* Accessibility:
+  * The home page is accessible to client and staff users, ensuring a consistent experience for all visitors.<br>
+  * About Page: Provides an overview of the restaurant's history, mission, or other relevant details.
+* Special Dishes: 
+  * Showcases unique or signature dishes offered by Weber Restaurant.<br>
+  * Reviews: Displays customer reviews, adding a social proof element to the page.<br>
+* Call to Action (CTA):
+  * Features a prominent call to action, encouraging users to make a reservation with a "Book a Table" button.<br>
+  * The CTA serves as an invitation for visitors to engage with the restaurant and plan their visit. .<br>
+<br><br>
+<img src="docs/readme_images/hero.jpg" width="60%"><br><br>
+<img src="docs/readme_images/welcome.jpg" width="60%"><br><br>
+<img src="docs/readme_images/special.jpg" width="60%"><br><br>
+<img src="docs/readme_images/review.jpg" width="60%"><br><br>
+
+#### Menu 
+* List of Menu Elements:
+  * Displays a comprehensive list of all available menu items offered by Weber Restaurant.<br>
+  * Each item represents a distinct meal.<br>
+* Details for Each Menu Item:
+  * **Name**: Mention the name of the dish.<br>
+  * **Image**: Includes a visual representation of the dish (optional).<br>
+  * **Price**: Specifies the cost of each menu item.<br>
+  * **Ingredients**: Provides a list of ingredients used to prepare the dish.<br>
+* Simple and Attractive Design:
+  * The page's design is kept simple and attractive, enhancing the user experience.<br>
+  * Emphasizes visual appeal with images (if included) and clear presentation of information.<br>
+<img src="docs/ireadme_images/menu.jpg" width="60%"><br><br>
+
+
+#### Reservation
+* The key features and aspects of this specialized page:
+* Authentication Requirement:
+  * The page is accessible only to users who have undergone the authentication process, ensuring it remains exclusive to authenticated clients and staff members.<br>
+* Personalized Space:
+  * Authenticated users are provided a personalized space to perform various actions related to their reservations and account details.<br>
+* Booking Creation:
+  * Authenticated clients can initiate the booking creation process directly from this page. A user-friendly form or interface allows them to input reservation details such as date, time, and the number of guests.<br>
+* Booking Management:
+Users, both clients and staff, can manage their existing bookings through intuitive controls. This includes options to view, edit, and delete reservations as needed.<br>
+<br><br>
+<img src="docs/readme_images/reservation.jpg" width="60%"><br><br>
+
+#### Contact
+
+* Opening Hours:
+  * Displays the operating hours of Weber Restaurant.<br>
+  * Provides visitors with information about when the restaurant is open for business.<br>
+* Contact Information:
+  * Includes essential contact details such as phone number and email address.<br>
+  * Allows users to contact the restaurant for inquiries, reservations, or other purposes.<br>
+* Physical Location:
+  * Specifies the address of Weber Restaurant.<br>
+  * Offers users a clear understanding of where the restaurant is located.<br><br> 
+
+<img src="docs/readme_images/contact.jpg" width="60%"><br><br>
+
+#### Register/Login
+* User Registration:
+  * Users can create accounts on the platform.<br>
+  * This process typically involves providing username, email, and password information.<br>
+* Authentication:
+  * Authenticated users can access personalized features and content.<br>
+  * Authentication ensures that users are who they claim to be, typically by entering valid credentials.<br>
+* User Registration Page:
+  * Allows new users to sign up for an account.<br>
+  * Collects necessary information for account creation.<br>
+* Authentication Page:
+  * It will enable users to log in to their accounts.<br>
+Typically, it involves entering a username/email and password.<br>
+* Password Reset Functionality:
+  * Provides a mechanism for users to reset their passwords if forgotten.<br>
+  * Enhances user experience and security. .<br><br> 
+
+<img src="docs/readme_images/register2.jpg" width="60%"><br><br>
+<img src="docs/readme_images/login.jpg" width="60%"><br><br>
+
+#### Logout
+* Purpose:
+  * The modal is designed to facilitate a secure and user-friendly logout experience.<br>
+* User Triggered:
+  * Users trigger the logout modal, presumably by interacting with a "Logout" button or a similar UI element.<br>
+* Modal Functionality:
+The modal provides a secure environment for users to confirm their logout decision.<br>
+* User-Friendly Experience:
+  * The modal aims to enhance the user experience by providing a clear and intuitive way to end their session.<br>
+  <br><br>
+
+<img src="docs/readme_images/logout.jpg" width="60%"><br><br>
 
 #### Client bookings management
 
-Every client that is authenticated can access the *Reservation* page where they have an overview over their reservations.
-* From this view they can select to:
-    * Create a new reservation;<br>
-    * Edit an existing reservation;<br>
-    * Delete a reservation;<br>
+* The Reservation page on the Weber Restaurant website is specifically designed for authenticated clients, providing them with a convenient overview and management options for their reservations. Here are the key functionalities:
+* Authentication Requirement:
+The Reservation page is accessible only to authenticated clients, ensuring the content and functionalities are personalized and secure.<br>
+* Overview of Reservations:
+  * Authenticated clients are presented with a clear overview of their existing reservations.<br>
+  * The overview may include reservation date, time, table information, and special notes.<br>
+* Create New Reservation:
+  * Clients can create a new reservation directly from the Reservation page.<br>
+  * This functionality streamlines the reservation process, allowing clients to schedule a new dining experience easily.<br>
+* Edit Existing Reservation:
+Authenticated clients can edit their existing reservations.<br>
+  * The edit functionality may include modifying details such as the reservation date, time, or the number of guests.<br>
+* Delete Reservation:
+  * Clients can delete reservations they no longer need or wish to modify.<br>
+  * The delete functionality allows clients to manage their reservations according to their preferences.<br>
 <br><br>
 
-<img src="docs/readme_images/clientlist.jpg" width="40%"><br><br>
+<img src="docs/readme_images/clientlist.jpg" width="60%"><br><br>
 
 #### Staff bookings management
 
-Staff users that are authenticated can access the *Reservation* page where they have an overview of all the reservations made, as well as an additional feature of being able to search for reservations based on date or email-address.
-* From this view they can select to:
-    * Create a new reservation;<br>
-    * Edit an existing reservation;<br>
-    * Delete a reservation;<br>
-    * Search for specific reservations<br>
+* The reservation page for authenticated staff users in Weber Restaurant is a powerful tool designed to streamline the management of reservations. Here's an overview of the key features and functionalities available to staff users:
+* Authentication and Authorization:
+Access to the Reservation page is restricted to authenticated staff users, ensuring only authorized personnel can perform reservation-related actions.<br> 
+  * Comprehensive Overview:
+Staff users are presented with a comprehensive overview of all reservations made at the restaurant.<br>
+  * Reservation details include reservation date, time, assigned table, guest count, and special notes.<br>
+* Search Functionality:
+  * Staff users can search for specific reservations based on criteria such as reservation date or customer email address.<br>
+  * The search feature enhances efficiency, allowing staff to locate and manage reservations quickly.<br>
+* Create New Reservation:
+  * Staff users can initiate the creation of a new reservation directly from the Reservation page.<br>
+  * This functionality is valuable for handling walk-in customers or phone reservations with ease.<br>
+* Edit Existing Reservation:
+  * The system allows staff users to edit details of existing reservations as needed.<br>
+  * Editing functionalities may include modifying reservation date, time, table assignment, or updating guest count.<br>
+* Delete Reservation:
+  * Staff users can delete reservations when necessary.
+  * This feature helps handle cancellations or adjust the seating plan based on changing circumstances.<br>
+* Efficient Reservation Management:
+  * The Reservation page provides a user-friendly interface, ensuring staff users can efficiently manage reservations without unnecessary complexity.<br>
+* Confirmation Messages:
+Staff users receive confirmation messages upon successfully creating, editing, or deleting a reservation.<br>
+* Confirmation messages provide feedback and acknowledgment, ensuring that staff are informed of the outcomes of their actions.<br>
 <br><br>
 
-<img src="docs/readme_images/stafflist.jpg" width="40%"><br><br>
+<img src="docs/readme_images/stafflist.jpg" width="60%"><br><br>
 
 #### Create bookings
 
-Every user that is authenticated can access the *Reservation* page for making a reservation. This feature provides a form where the user can fill in the reservation details.
-* The form is for selecting the date and time interval of the booking.
-    The inputs are validated after the following rules:
-    * The Date value should not be less than the current day;<br>
-    * Entering Name, date and number of people is required;<br>
-    * Maximum number of guests for a reservation is 8 people;<br>
-    * The user can choose times from a list;
-      * 1: 12:00 - 14:00
-      * 2: 14:00 - 16:00
-      * 3: 16:00 - 18:00
-      * 4: 18:00 - 20:00
-      * 5: 20:00 - 22:00<br><br>
+* The Reservation page for authenticated users in Weber Restaurant allows users to create reservations using a user-friendly form. Here's an overview of the key features and the reservation creation process:
+* Authentication and Access:
+  * Access to the Reservation page is available to authenticated users, ensuring that only logged-in customers can create reservations.<br>
+* Reservation Form:
+  * The page features a reservation form where users can input details for their booking.<br>
+* Key form elements include fields for Name, Date, Time, Number of People, and any Special Notes.<br>
+* Date and Time Selection:
+  * Users can select the desired date for their reservation.<br>
+  * Time intervals are presented as a list, and users can choose from the available time slots:
+*  12:00 - 14:00
+*  14:00 - 16:00
+*  16:00 - 18:00
+*  18:00 - 20:00
+*  20:00 - 22:00<br>
 
+* Success Message:
+  * Upon successful submission of a reservation, users receive a success message.<br>
+<br><br>
    
-<img src="docs/readme_images/create_reservation.jpg" width="40%"><br><br>
-
-* If the reservation is submitted successfully, a success message will appear 
+<img src="docs/readme_images/create_reservation.jpg" width="60%"><br><br>
 
 
-#### Menu 
-* On the *Menu* page there is a list with all the menu elements. Every item represents a meal with details such as *Name*, *Image*, *Price*, and Ingredients. The list design is simple and attractive.<br>
-<img src="docs/ireadme_images/menu1.jpg" width="70%"><br><br>
 
+#### Edit bookings page
 
-The "Contact" page serves as a one-stop destination for all essential details about the Weber Restaurant. It features our opening hours, contact information, and physical location. 
+* For Users:
+  * The "Edit" button is available on the manage bookings page.<br>
+  * Regular users can click on this button to be directed to a form.<br>
+  * The form allows them to update or edit their booking details when necessary.<br>
+  * This feature enhances user experience, enabling them to manage their reservations easily.<br>
 
-<img src="docs/readme_images/contact.jpg" width="30%"><br><br>
+* For Staff Users:
+  * Staff members can access the "Edit" button on the manage bookings page.<br>
+  * Staff can edit bookings, even if they did not create the reservation.<br>
+  * It allows staff members to amend booking details as needed, providing more control and flexibility in managing reservations.<br>
+  <br><br>
+<img src="docs/readme_images/edit_reservation.jpg" width="60%"><br><br>
 
+#### Delete Booking Page
 
+* Adding a "Delete Booking" feature enhances the user and staff experience on the reservation management page. Here are the critical aspects of the "Delete Booking" functionality:
+* User-Friendly Interface:
+  * A "Delete" button for customers and staff members is incorporated into the reservation management page.<br>
+* Reservation_Deletion.html Template:
+  * The delete functionality is implemented within the reservation_delete.html template, providing a dedicated space for users to manage their bookings.<br>
+* Customer Deletion:
+  * Upon accessing the reservation management page, customers can utilize the "Delete" button to remove a booking they no longer require.<br>
+  * This feature empowers customers to manage their reservations independently without contacting the restaurant directly.<br>
+* Staff Deletion:
+  * Staff members also can delete bookings through the user interface.<br>
+  * This capability allows staff to efficiently handle situations where a customer calls to cancel a booking, freeing up table capacity.<br>
+* Confirmation Process:
+  * This confirmation step ensures that users, both customers and staff, are intentional about their deletion actions.<br>
+  <br><br>
+  <img src="docs/readme_images/delete_reservation.jpg" width="60%"><br><br>
 
