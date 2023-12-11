@@ -191,7 +191,7 @@ The wireframes for mobile and desktop were created with  [Balsamiq](https://bals
 
 - Logout page
 
-![Logout](docs/readme_images/logout.jpg)
+![Logout](docs/readme_images/logout-w.jpg)
 
 - Create Reservation page
 
