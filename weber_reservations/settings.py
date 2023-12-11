@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('django-insecure-(_c%9i=zel9sa3&$!4u9a-lf%q+sjgzh9ecfug7rs=me9xfl-4', 'cvgrfzmyjfam12467')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,11 +144,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
- }
+}
 
 
 # DATABASES = {
-#   'default': dj_database_url.config(
+#    'default': dj_database_url.config(
 #    default=os.environ.get("DATABASE_URL", "postgres://qnqeutor:YfdV11PlXRvQXPpxMwN9_aSk0D7rfblW@lucky.db.elephantsql.com/qnqeutor")
 #    )
 #}

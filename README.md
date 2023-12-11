@@ -158,11 +158,50 @@ The website is created and designed to focus on user experience and is divided i
 
 #### Flowchart
 The Flowchart for my program was designed using <b>LucidChart</b>. It visualizes the system's work, providing an overview of the logic and steps involved in the program's workflow.<br>
-![Flowchart](docs/readme_images/weber-restaurant-flowchart.jpg)<br><br>
+![Flowchart](docs/readme_images/weber-restaurant-flowchart1.jpg)<br><br>
 
 ### Skeleton<hr>
 **Wireframes**<br>
-The wireframes for mobile and desktop were created with  [Balsamiq](https://balsamiq.com/wireframes/desktop/#) tool and can be viewed [here]
+The wireframes for mobile and desktop were created with  [Balsamiq](https://balsamiq.com/wireframes/desktop/#) tool 
+- Home page
+
+![Home Page](docs/readme_images/home-w.jpg)
+
+
+- Menu page
+
+
+![Menu Page](docs/readme_images/menu-w.jpg)
+
+- Reservation page
+
+![Reservation Page](docs/readme_images/reservation-w.jpg)
+
+-Contact page
+
+![Contact Page](docs/readme_images/contact-w.jpg)
+
+- Register Page
+
+![Register page](docs/readme_images/register-w.jpg)
+
+- Login 
+
+![Login](docs/readme_images/login-w.jpg)
+
+- Logout page
+
+![Logout](docs/readme_images/logout.jpg)
+
+- Create Reservation page
+
+![create reservation](docs/readme_images/create_reservation-w1.jpg)
+
+
+- Update Reservation page
+
+![Update reservation](docs/readme_images/edit_reservation-w1.jpg)
+
 
 
 **Database**<br>
