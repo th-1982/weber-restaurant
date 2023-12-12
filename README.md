@@ -2,15 +2,15 @@
 
 (Developer: Theresa Wolff)
 
-![Mockup image]()
+![Mockup image](file:///C:/Users/wolff/OneDrive/Desktop/mockup_files/image.png)
 
 **Live Site:**
 
-[Live webpage]()
+[Live webpage](https://weber-restaurant-496816a4ee09.herokuapp.com/)
 
 **Link to Repository:**
 
-[Repository]()
+[Repository](https://github.com/th-1982/weber-restaurant)
 
 **Developed by: Theresa Wolff**
 
@@ -229,36 +229,6 @@ Two diagrams were created to represent the relationships between the tables. The
 #### Logo
 * The website logo was made using [Canvas](https://www.canva.com/templates/?query=logo) to match website's color scheme
 
-#### Visual Effects
-* **Box shadows** <br>
-Multiple box shadows were used for the cover, buttons and images. They were inspired from [css-box-shadow-examples]("https://getcssscan.com/css-box-shadow-examples")<br>
-
-* **Animation**<br>
-Some animations were used for creating a dynamic and attractive design
-<details>
-  <summary>View Moving arrows animation</summary>
-<img src="docs/media/arrow-capture.gif.mp4"><br>
-</details>
-<details>
-  <summary>View pop-up images animation</summary>
-<img src="static/italianissimo/media/image-capture.gif"><br>
-</details>
-
-* **Hover effects**<br>
-<details>
-  <summary>View NavBar elements hover</summary>
-<img src="static/italianissimo/media/nav-capture.gif"><br>
-</details>
-<details>
-  <summary>View Buttons hover</summary>
-<img src="static/italianissimo/media/delete-capture.gif"><br>
-</details>
-<details>
-<summary>View Footer elements hover</summary>
-<img src="static/italianissimo/media/footer-capture.gif"><br>
-</details>
-<br>
-<br>
 
 ## Agile methodolgy
 This project was developed using the Agile methodology.<br>
@@ -511,7 +481,7 @@ Staff users receive confirmation messages upon successfully creating, editing, o
 * Confirmation messages provide feedback and acknowledgment, ensuring that staff are informed of the outcomes of their actions.<br>
 <br><br>
 
-<img src="docs/readme_images/stafflist.jpg" width="60%"><br><br>
+<img src="docs/readme_images/stafflist.png" width="60%"><br><br>
 
 #### Create bookings
 
