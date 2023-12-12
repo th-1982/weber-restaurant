@@ -753,7 +753,7 @@ At the time of deployment the validation for *style.css* has the following outco
 The Javascript code was validated using using [JsHint](https://jshint.com/)<br>
 At the time of deployment the validation for *script.js* has the following outcome:<br><br>
 
-<img src="docs/testing/js.test.jpg" width="40%"><br><br>
+<img src="docs/readme_images/js.test.jpg" width="40%"><br><br>
 
 ### Python
 The python code was tested using [Coding Institutes Python Linter](https://pep8ci.herokuapp.com/).<br>
@@ -795,10 +795,10 @@ The performance of the website was tested with [Google Lighthouse](https://devel
 <summary>Desktop</summary>
 
 * contact page<br>
-<img src="docs/testing/dklight_contcat.jpg" width="60%"><br><br>
+<img src="docs/testing/dklightcontcat.jpg" width="60%"><br><br>
 
-* Menu page<br>
-<img src="docs/o/testing/dklight_sign-in.jpg" width="60%"><br><br>
+* Sign in page<br>
+<img src="docs/testing/dklight_sign-in.jpg" width="60%"><br><br>
 
 * menu page<br>
 <img src="docs/testing/dklight_menu.jpg" width="60%"><br><br>
@@ -818,7 +818,7 @@ The performance of the website was tested with [Google Lighthouse](https://devel
 <summary>Mobile</summary>  
 
 * Contact page<br>
-<img src="docs/testing/moblight_contact(1).jpg" width="60%"><br><br>
+<img src="docs/testing/moblight_contact (1).jpg" width="60%"><br><br>
 
 * Sign in page<br>
 <img src="docs/testing/moblight_sign-in.jpg" width="60%"><br><br>
@@ -834,11 +834,11 @@ The performance of the website was tested with [Google Lighthouse](https://devel
 </details><br>
 
 ## Bugs
-* **I encountered no reversematch error at reservation_list when I added a link to update and delete the reservation.
+* I encountered no reversematch error at reservation_list when I added a link to update and delete the reservation.
 
 I solved this problem by adding the primary keys of each reservation<br>
 
-* **The second issue I encountered was the success message needed to be displayed when I created a reservation. 
+* The second issue I encountered was the success message needed to be displayed when I created a reservation. 
 
 To solve this, I added a success message mixin and a success message in view.py.
 

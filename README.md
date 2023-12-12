@@ -27,7 +27,6 @@
   + [Surface](#surface)
     - [Color Scheme](#color-scheme)
     - [Fonts](#fonts)
-    - [Visual Effects](#visual-effects)
 * [Agile Methodology](#agile-methodology)
 * [Features](#features)
   + [Existing Features](#existing-features)
@@ -55,7 +54,7 @@
 ## Overview
 Weber Restaurant is a fictional restaurant located in the heart of Munich's English Garden, Germany. The project is designed to create a comprehensive experience for Weber Restaurant's clients. The users can easily reserve tables,  add special notes for the booking, and specify the number of guests. On the other hand, staff members can manage these bookings efficiently through a staff-only interface. The system ensures that only available tables are offered to the customers, considering variables like time, date, and capacity. The website was created to handle real-world scenarios with ease. Weber Restaurant's booking website was developed using Python(Django), HTML, CSS, and JavaScript, with data being stored in a PostgreSQL database and images on a WhiteNoise.
 <br><br>
-The fully deployed project can be accessed at [this link](https://.herokuapp.com/).<br><br>
+The fully deployed project can be accessed at [this link](https://weber-restaurant-496816a4ee09.herokuapp.com/).<br><br>
 
 ## User Experience - UX
 This site was created respecting the Five Planes Of Website Design:<br>
@@ -370,7 +369,7 @@ The navigation menu on the Weber Restaurant website is a critical component that
 * Simple and Attractive Design:
   * The page's design is kept simple and attractive, enhancing the user experience.<br>
   * Emphasizes visual appeal with images (if included) and clear presentation of information.<br>
-<img src="docs/ireadme_images/menu.jpg" width="60%"><br><br>
+<img src="docs/readme_images/menu.jpg" width="60%"><br><br>
 
 
 #### Reservation
@@ -693,7 +692,7 @@ You will need to install all of the packages listed in the requirements file you
 
 ### Code
 
-Resources, Readme and inspiration came from a few sources:
+Resources, Readme inspiration and some of my code came from a few sources:
 
 *  [Christia Goran](https://github.com/christiangoran/dome-restaurant-repo)
 * [Useriasminna](https://github.com/useriasminna/italianissimo-booking-website) 
@@ -714,6 +713,8 @@ Images:
 * The hero image, background image and all the images in the manu page, about page were taken from [pexels](https://www.pexels.com),
 [pixaby],(https:pixaby.com)
 [Freepik](https://www.freepik.com)
+
+* I got the mockup Generator form [Mockup-Generator](https://techsini.com/unable-to-generate-mockup-of-your-website-here-is-the-quick-fix/)
 
 
 ## Acknowledgements
