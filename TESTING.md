@@ -729,7 +729,7 @@ Results:
 The html code of the website was validated using [W3 Markup Validator](https://validator.w3.org/).<br>
 At the time of deployment the validation have the following outcome:<br><br>
 
-<img src="static/images/htmlchecker.png" width="40%"><br><br>
+<img src="docs/readme_images/htmltest.jpg" width="40%"><br><br>
 
 The following pages have been tested:
 * Home
@@ -753,7 +753,7 @@ At the time of deployment the validation for *style.css* has the following outco
 The Javascript code was validated using using [JsHint](https://jshint.com/)<br>
 At the time of deployment the validation for *script.js* has the following outcome:<br><br>
 
-<img src="docs/testing/js_valid.png" width="40%"><br><br>
+<img src="docs/testing/js.test.jpg" width="40%"><br><br>
 
 ### Python
 The python code was tested using [Coding Institutes Python Linter](https://pep8ci.herokuapp.com/).<br>
