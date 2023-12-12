@@ -2,7 +2,7 @@
 
 (Developer: Theresa Wolff)
 
-![Mockup image](file:///C:/Users/wolff/OneDrive/Desktop/mockup_files/image.png)
+![Mockup image](docs/readme_images/mockup%20(1).jpg)
 
 **Live Site:**
 
