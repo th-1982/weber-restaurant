@@ -466,6 +466,26 @@ h5 {
     font-size: 18px;
 }
 
+/*   Table  */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  td, th {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: black;
+ 
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  
 
 
 @keyframes arrows {

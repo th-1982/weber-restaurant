@@ -22,10 +22,13 @@ class MenuView(TemplateView):
     template_name = 'menu.html'
 
 
+
+
 class BookingView(LoginRequiredMixin,  FormView):
     template_name = 'booking.html'
     form_class = ReservationForm
-    fields = ['name', 'customer_email', 'date', 'time', 'notes', 'number_of_guests', 'table']
+    fields = ['name', 'customer_email', 'date', 'time', 'notes',
+              'number_of_guests', 'table']
     success_url = reverse_lazy('reservation_list')
     model = Reservations
 
@@ -34,7 +37,7 @@ class BookingView(LoginRequiredMixin,  FormView):
         Before form submission, assign table with lowest capacity
         needed for booking guests
         """
-        form.instance.customer = self.request.user
+        form.instance.user = self.request.user
         date = form.cleaned_data['date']
         time = form.cleaned_data['time']
         guests = form.cleaned_data['number_of_guests']
@@ -60,12 +63,15 @@ class BookingView(LoginRequiredMixin,  FormView):
                 lowest_capacity_table = table
         form.instance.table = lowest_capacity_table
 
+        if form.is_valid():
+            form.save()
+
         messages.success(
             self.request,
             f'Booking confirmed for {guests} guests on {date}'
         )
 
-        return super(BookingView, self).form_valid(form)
+        return super().form_valid(form)
 
 class Reservation_List_View(LoginRequiredMixin, ListView):
     model = Reservations
@@ -75,8 +81,8 @@ class Reservation_List_View(LoginRequiredMixin, ListView):
     def get_queryset(self):
         if self.request.user.is_staff:
             queryset = super().get_queryset()
-            booking_email = self.request.GET.get('customer_email')
-            booking_date = self.request.GET.get('date')
+            booking_email = self.request.GET.get('booking_email')
+            booking_date = self.request.GET.get('booking_date')
 
             if booking_email:  # If booking_email is not None
                 queryset = queryset.filter(customer_email=booking_email)
@@ -102,10 +108,14 @@ class Reservation_List_View(LoginRequiredMixin, ListView):
         return context
 
 
-class Reservation_Edit_View(LoginRequiredMixin, UserPassesTestMixin,UpdateView):
+
+
+class Reservation_Edit_View(LoginRequiredMixin, UserPassesTestMixin,
+                            UpdateView):
     model = Reservations
     template_name = "reservation_edit.html"
-    fields = ['name', 'customer_email', 'date', 'time', 'notes', 'number_of_guests', 'table']
+    fields = ['name', 'customer_email', 'date', 'time', 'notes',
+              'number_of_guests', 'table']
     success_url = reverse_lazy("reservation_list")
     model = Reservations
 
@@ -142,11 +152,14 @@ class Reservation_Edit_View(LoginRequiredMixin, UserPassesTestMixin,UpdateView):
                     lowest_capacity_table = table
             form.instance.table = lowest_capacity_table
 
+        if form.is_valid():
+            form.save()
+
         messages.success(
             self.request,
             f'Successfully updated booking for {guests} guests on {date}'
         )
-        return super(Reservation_Edit_View, self).form_valid(form)
+        return super().form_valid(form)
 
     def test_func(self):
         """ Test user is staff or throw 403 """
@@ -154,7 +167,6 @@ class Reservation_Edit_View(LoginRequiredMixin, UserPassesTestMixin,UpdateView):
             return True
         else:
             return self.request.user == self.get_object().user
-
 
 class Reservation_Delete_View(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Reservations
